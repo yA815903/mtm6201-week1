@@ -1,9 +1,4 @@
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
- }
- /* Style for the header */
+/* Style for the header */
  header {
   display: flex;
   justify-content: space-between;
@@ -34,7 +29,7 @@
  
  nav a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-weight: bold;
  }
  
@@ -89,7 +84,11 @@
   font-size: 1.2rem;
   margin: 10px 0;
  }
- 
+ .price {
+  font-size: 1.5rem;
+  color: #333;
+}
+
  .section {
   margin: 50px 0;
   text-align: center;
@@ -161,7 +160,59 @@
   height: auto;
   display: grid;
  }
- 
+ /* Accessibility improvements */
+
+/* Add focus styles to all interactive elements */
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid dodgerblue;
+}
+
+/* Hide decorative images from screen readers */
+img[alt=""] {
+    display: none;
+}
+
+/* Provide descriptive alt text for non-decorative images */
+img:not([alt=""]) {
+    /* Add your alt text here */
+}
+
+/* Increase the contrast of text */
+body {
+    color: #000;
+    background-color: #fff;
+}
+
+/* Add a skip link to help keyboard users navigate the page */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #fff;
+    padding: 10px;
+    border: 2px solid dodgerblue;
+    z-index: 999;
+}
+
+/* Visually hide skip link until it receives focus */
+.skip-link:not(:focus) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+}
+
+/* Make focus visible on skip link */
+.skip-link:focus {
+    top: 0;
+}
+
  /* Mobile Styles */
  @media only screen and (max-width: 1200px) {
   * {
@@ -173,8 +224,8 @@
  /* Desktop Styles */
  @media only screen and (min-width: 600px) {
   * {
-  background-color:indigo;
-  color: white;
+  background-color:white;
+  color: indigo;
   }
  }
  
