@@ -116,7 +116,6 @@
   flex-direction: column;
   max-width: 600px;
   margin: 0 auto;
-  box-border:50%;
  }
  
  label {
@@ -172,46 +171,40 @@ textarea:focus {
 }
 
 /* Hide decorative images from screen readers */
-img[alt=""] {
+img[alt="Dave"] {
     display: none;
 }
 
 /* Provide descriptive alt text for non-decorative images */
-img:not([alt=""]) {
-    /* Add your alt text here */
-}
+img:not([alt="dave"]) {
+    border: 2px solid blue;
+    padding: 10px;
+    background-color: indigo;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+   }
 
 /* Increase the contrast of text */
 body {
     color: #000;
     background-color: #fff;
 }
-
-/* Add a skip link to help keyboard users navigate the page */
 .skip-link {
     position: absolute;
     top: -40px;
     left: 0;
-    background-color: #fff;
-    padding: 10px;
-    border: 2px solid dodgerblue;
-    z-index: 999;
-}
+    background-color: #f7f7f7;
+    color: #333;
+    padding: 6px 12px;
+    text-decoration: none;
+    z-index: 9999;
+  }
 
-/* Visually hide skip link until it receives focus */
-.skip-link:not(:focus) {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    width: 1px;
-}
-
-/* Make focus visible on skip link */
-.skip-link:focus {
+  .skip-link:focus {
     top: 0;
-}
+  }
+
 
  /* Mobile Styles */
  @media only screen and (max-width: 1200px) {
@@ -222,7 +215,7 @@ body {
  }
  
  /* Desktop Styles */
- @media only screen and (min-width: 600px) {
+ @media only screen and (min-width: 300px) {
   * {
   background-color:white;
   color: indigo;
