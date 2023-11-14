@@ -1,56 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dave Wild Bakery</title>
-  <link rel="stylesheet" href="css/main.css">
-  <style>
-  </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dave Wild Bakery</title>
+	<link rel="stylesheet" href="css/main.css">
+	<style></style>
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <img src="images/dave-the-bakery.jpg" alt="Dave" class="bakery">
-      <h1 class="name">Dave Wild bakery</h1>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div class="contact-info">
-    <h3>Contact Information</h3>
-    <ul>
-      <li><i class="fas fa-map-marker-alt"></i>Ottawa Canada</li>
-      <li><i class="fas fa-phone"></i> 613-111-222</li>
-      <li><i class="fas fa-envelope"></i> info@davewildbakery.com</li>
-      <li><i class="fas fa-clock"></i> Mon - Fri: 8am - 6pm, Sat - Sun: 10am - 4pm</li>
-    </ul>
-  </div>
-    <section class="section">
-    <h2>Contact Us</h2>
-    <form action="submit-form.php" method="POST">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="user_name" required><br>
+	<header>
+		<div class="logo">
+			<img src="images/dave-the-bakery.jpg" alt="Dave" class="bakery">
+			<h1 class="name">Dave Wild bakery</h1>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section class="contact-info">
+		<h2>Contact Information</h2>
+		<ul>
+			<li>Email: davewild@example.com</li>
+			<li>Phone: 123-456-7890</li>
+			<li>Address: 1 Elgin St Ottawa, ON</li>
+		</ul>
+	</section>
+	<section class="section">
+		<h2>Contact Us</h2>
+		<form action="/submit_form" method="post">
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name" required>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="user_email" required><br>
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" required>
 
-      <label for="phone">Phone:</label>
-      <input type="tel" id="phone" name="user_phone" required><br>
+			<label for="message">Message</label>
+			<textarea id="message" name="message" required></textarea>
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="user_message" required></textarea><br>
-
-      <input type="submit" value="Submit">
-    </form>
-  </section>
-  <footer>
-    <p>&copy; 2022 Dave Wild Bakery.</p>
-  </footer>
+			<input type="submit" value="Submit">
+		</form>
+	</section>
+	<footer>
+		<p>&copy; 2022 Dave Wild Bakery.</p>
+	</footer>
 </body>
 </html>
