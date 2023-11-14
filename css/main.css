@@ -1,196 +1,201 @@
 /* Style for the header */
- header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
- }
- 
- .logo img {
-  width: 80px;
-  height: auto;
- }
- 
- .name {
-  font-size: 24px;
-  margin-left: 10px;
- }
- 
- nav ul {
-  list-style: none;
-  display: flex;
- }
- 
- nav li {
-  margin-right: 15px;
- }
- 
- nav a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
- }
- 
- /* Style for main content */
- main {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 30px;
- }
- .contact-info {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  color: #333;
-  margin-top: 20px;
- }
- 
- .contact-info h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
- }
- 
- .contact-info ul {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 0;
- }
- 
- .contact-info li {
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
- }
- 
- .contact-info li i {
-  margin-right: 10px;
- }
- 
- .contact-info li:last-child {
-  margin-bottom: 0;
- }
- 
- .contact-info li a {
-  text-decoration: none;
-  color: #333;
- }
- 
- .contact-info li a:hover {
-  text-decoration: underline;
- }
- 
- .phone {
-  font-size: 1.2rem;
-  margin: 10px 0;
- }
- .price {
-  font-size: 1.5rem;
-  color: #333;
-}
-
- .section {
-  margin: 50px 0;
-  text-align: center;
- }
- 
- .section h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
- }
- 
- .section img {
-  max-width: 100%;
-  height: auto;
-  display: grid;
- }
- 
- .section p {
-  font-size: 24px;
-  line-height: 1.5;
-  margin-bottom: 20px;
- }
- 
- form {
-  display: flex;
-  flex-direction: column;
-  max-width: 600px;
-  margin: 0 auto;
- }
- 
- label {
-  display: block;
-  margin-bottom: 10px;
- }
- 
- input,
- textarea {
-  padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font-size: 16px;
- }
- 
- input[type="submit"] {
-  background-color: #2d3b47;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-  cursor: pointer;
-  font-size: 16px;
- }
- 
- input[type="submit"]:hover {
-  background-color: #c94c4c;
- }
- 
- h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 30px;
- }
- /*all stock images*/
- img {
-  display: block;
-  margin: 0 auto;
-  max-width: 50%;
-  height: auto;
-  display: grid;
- }
- /* Accessibility improvements */
-
-/* Add focus styles to all interactive elements */
-a:focus,
-button:focus,
-input:focus,
-select:focus,
-textarea:focus {
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo img {
+    width: 80px;
+    height: auto;
+  }
+  
+  .name {
+    font-size: 24px;
+    margin-left: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 15px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  /* Style for main content */
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+  
+  .contact-info {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  .contact-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  
+  .contact-info li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-info li i {
+    margin-right: 10px;
+  }
+  
+  .contact-info li:last-child {
+    margin-bottom: 0;
+  }
+  
+  .contact-info li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .contact-info li a:hover {
+    text-decoration: underline;
+  }
+  
+  .phone {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .price {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .section {
+    margin: 50px 0;
+    text-align: center;
+  }
+  
+  .section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .section img {
+    max-width: 100%;
+    height: auto;
+    display: grid;
+  }
+  
+  .section p {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  input[type="submit"] {
+    background-color: #2d3b47;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #c94c4c;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  
+  /*all stock images*/
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+    height: auto;
+    display: grid;
+  }
+  
+  /* Accessibility improvements */
+  
+  /* Add focus styles to all interactive elements */
+  a:focus,
+  button:focus,
+  input:focus,
+  select:focus,
+  textarea:focus {
     outline: 3px solid dodgerblue;
-}
-
-/* Hide decorative images from screen readers */
-img[alt="Dave"] {
+  }
+  
+  /* Hide decorative images from screen readers */
+  img[alt="Dave"] {
     display: none;
-}
-
-/* Provide descriptive alt text for non-decorative images */
-img:not([alt="dave"]) {
+  }
+  
+  /* Provide descriptive alt text for non-decorative images */
+  img:not([alt="dave"]) {
     border: 2px solid blue;
     padding: 10px;
     background-color: indigo;
     color: #fff;
     font-weight: bold;
     font-size: 16px;
-   }
-
-/* Increase the contrast of text */
-body {
+  }
+  
+  /* Increase the contrast of text */
+  body {
     color: #000;
     background-color: #fff;
-}
-.skip-link {
+  }
+  
+  .skip-link {
     position: absolute;
     top: -40px;
     left: 0;
@@ -200,33 +205,61 @@ body {
     text-decoration: none;
     z-index: 9999;
   }
-
+  
   .skip-link:focus {
     top: 0;
   }
-
-
- /* Mobile Styles */
- @media only screen and (max-width: 1200px) {
-  * {
-  background-color:white;
-  color: green;
+  /* Animation for the banner */
+  .banner img {
+    animation: slideIn 1s ease-in-out;
   }
- }
- 
- /* Desktop Styles */
- @media only screen and (min-width: 300px) {
-  * {
-  background-color:white;
-  color: indigo;
+
+  /* Animation for the price */
+  .price {
+    animation: fadeIn 1s ease-in-out;
+    opacity: 0;
   }
- }
- 
- 
- footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
- }
- 
+
+  /* Keyframes for slideIn animation */
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  /* Keyframes for fadeIn animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* Mobile Styles */
+  @media only screen and (max-width: 960px) {
+    * {
+      background-color: white;
+      color: green;
+    }
+  }
+  
+  /* Desktop Styles */
+  @media only screen and (min-width: 300px) {
+    * {
+      background-color: white;
+      color: indigo;
+    }
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
